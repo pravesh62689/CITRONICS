@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Ubuntu+Condensed&display=swap'); 
+@import url("https://use.fontawesome.com/releases/v5.11.2/css/all.css");
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgb(1 22 56) 0%, rgba(1,0,45,1) 26%, rgb(6 37 62) 68%, rgb(4 14 45)100%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.clg-banner{
+    width: 98.8vw;
+}
+
+h1{
+    margin: 0;
+    font-size: 7rem;
+    color: rgba(225,225,225, .01);
+    background-image: url("https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: repeat;
+    -webkit-background-clip:text;
+    animation: animate 10s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@keyframes animate {
+    0%, 100% {
+        background-position: left top;
+    }
+    25%{
+        background-position: right bottom;
+    }
+    50% {
+        background-position: left bottom;
+    }
+    75% {
+        background-position: right top;
+    }   
+}
+
+
+@media (max-width: 800px) {
+    h1{
+    font-size: 3.5rem;
+    }
+    .container{
+        font-size: 0.8rem;
+    }
+}
+
+.container-a{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 300
+}
+
+
+.banner{
+    background-image: url('./Icons/banner0.webp');
+}
